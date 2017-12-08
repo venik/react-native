@@ -11,6 +11,7 @@ package com.facebook.react.modules.dialog;
 
 import javax.annotation.Nullable;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -21,6 +22,7 @@ import android.os.Bundle;
 /**
  * A fragment used to display the dialog.
  */
+@SuppressLint("ValidFragment")
 public class AlertFragment extends DialogFragment implements DialogInterface.OnClickListener {
 
   /* package */ static final String ARG_TITLE = "title";

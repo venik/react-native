@@ -11,6 +11,7 @@ package com.facebook.react.modules.dialog;
 
 import javax.annotation.Nullable;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ import android.support.v4.app.DialogFragment;
  * {@link AlertFragment} for apps that use the Support FragmentActivity and FragmentManager
  * for legacy reasons.
  */
+@SuppressLint("ValidFragment")
 public class SupportAlertFragment extends DialogFragment implements DialogInterface.OnClickListener {
 
   private final @Nullable DialogModule.AlertFragmentListener mListener;
